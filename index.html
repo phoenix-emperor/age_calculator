@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="date"
+        name="date"
+        id="dateInput"
+        placeholder="dd-mm-yyyy"
+        value=""
+        min="1970-01-01"
+        max="2030-12-31"
+      />
+      <div class="showAge">
+        <div>
+          <span id="year">000</span>
+          <p>Year</p>
+        </div>
+        <div>
+          <span id="month">00</span>
+          <p>Month</p>
+        </div>
+        <div>
+          <span id="days">00</span>
+          <p>Days</p>
+        </div>
+      </div>
+      <button onclick="calculateAge()">Calculate Your Age</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
